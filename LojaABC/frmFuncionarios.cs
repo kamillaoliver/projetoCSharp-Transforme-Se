@@ -157,9 +157,11 @@ namespace LojaABC
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
-
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
+            abrir.Show();
+            this.Hide();
         }
     }
 }
