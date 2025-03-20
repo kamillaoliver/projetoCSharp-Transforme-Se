@@ -12,3 +12,4 @@ C:\Users\kamilla.msoliveira\Documents\Visual Studio 2019\TransformeSe\LojaABC\ob
 C:\Users\kamilla.msoliveira\Documents\Visual Studio 2019\TransformeSe\LojaABC\obj\Debug\LojaABC.frmFuncionarios.resources
 C:\Users\kamilla.msoliveira\Documents\Visual Studio 2019\TransformeSe\LojaABC\obj\Debug\LojaABC.frmMenuPrincipal.resources
 C:\Users\kamilla.msoliveira\Documents\Visual Studio 2019\TransformeSe\LojaABC\obj\Debug\LojaABC.frmPesquisarFuncionarios.resources
+C:\Users\kamilla.msoliveira\Documents\Visual Studio 2019\TransformeSe\LojaABC\obj\Debug\LojaABC.frmSobreNos.resources

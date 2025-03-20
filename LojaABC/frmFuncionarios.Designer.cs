@@ -33,7 +33,7 @@ namespace LojaABC
             this.gpbDadosPessoais = new System.Windows.Forms.GroupBox();
             this.mskCelular = new System.Windows.Forms.MaskedTextBox();
             this.lblCelular = new System.Windows.Forms.Label();
-            this.grbSexo = new System.Windows.Forms.GroupBox();
+            this.gpbSexo = new System.Windows.Forms.GroupBox();
             this.rdbMasculino = new System.Windows.Forms.RadioButton();
             this.rdbNaoDesejoInformar = new System.Windows.Forms.RadioButton();
             this.rdbFeminino = new System.Windows.Forms.RadioButton();
@@ -56,7 +56,7 @@ namespace LojaABC
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnNovo = new System.Windows.Forms.Button();
             this.grbEndereco = new System.Windows.Forms.GroupBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.lblNumero = new System.Windows.Forms.Label();
             this.cbbUF = new System.Windows.Forms.ComboBox();
             this.lblUF = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@ namespace LojaABC
             this.txtLogradouro = new System.Windows.Forms.TextBox();
             this.lblLogradouro = new System.Windows.Forms.Label();
             this.gpbDadosPessoais.SuspendLayout();
-            this.grbSexo.SuspendLayout();
+            this.gpbSexo.SuspendLayout();
             this.pnlCrud.SuspendLayout();
             this.grbEndereco.SuspendLayout();
             this.SuspendLayout();
@@ -80,7 +80,7 @@ namespace LojaABC
             // 
             this.gpbDadosPessoais.Controls.Add(this.mskCelular);
             this.gpbDadosPessoais.Controls.Add(this.lblCelular);
-            this.gpbDadosPessoais.Controls.Add(this.grbSexo);
+            this.gpbDadosPessoais.Controls.Add(this.gpbSexo);
             this.gpbDadosPessoais.Controls.Add(this.dtpDataDeNascimento);
             this.gpbDadosPessoais.Controls.Add(this.lblDataDeNascimento);
             this.gpbDadosPessoais.Controls.Add(this.mskCPF);
@@ -98,7 +98,6 @@ namespace LojaABC
             this.gpbDadosPessoais.TabIndex = 0;
             this.gpbDadosPessoais.TabStop = false;
             this.gpbDadosPessoais.Text = "Dados pessoais";
-            this.gpbDadosPessoais.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // mskCelular
             // 
@@ -107,7 +106,6 @@ namespace LojaABC
             this.mskCelular.Name = "mskCelular";
             this.mskCelular.Size = new System.Drawing.Size(101, 26);
             this.mskCelular.TabIndex = 6;
-            this.mskCelular.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // lblCelular
             // 
@@ -117,20 +115,18 @@ namespace LojaABC
             this.lblCelular.Size = new System.Drawing.Size(58, 20);
             this.lblCelular.TabIndex = 15;
             this.lblCelular.Text = "Celular";
-            this.lblCelular.Click += new System.EventHandler(this.label6_Click_1);
             // 
-            // grbSexo
+            // gpbSexo
             // 
-            this.grbSexo.Controls.Add(this.rdbMasculino);
-            this.grbSexo.Controls.Add(this.rdbNaoDesejoInformar);
-            this.grbSexo.Controls.Add(this.rdbFeminino);
-            this.grbSexo.Location = new System.Drawing.Point(22, 117);
-            this.grbSexo.Name = "grbSexo";
-            this.grbSexo.Size = new System.Drawing.Size(220, 119);
-            this.grbSexo.TabIndex = 7;
-            this.grbSexo.TabStop = false;
-            this.grbSexo.Text = "Sexo";
-            this.grbSexo.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.gpbSexo.Controls.Add(this.rdbMasculino);
+            this.gpbSexo.Controls.Add(this.rdbNaoDesejoInformar);
+            this.gpbSexo.Controls.Add(this.rdbFeminino);
+            this.gpbSexo.Location = new System.Drawing.Point(22, 117);
+            this.gpbSexo.Name = "gpbSexo";
+            this.gpbSexo.Size = new System.Drawing.Size(220, 119);
+            this.gpbSexo.TabIndex = 7;
+            this.gpbSexo.TabStop = false;
+            this.gpbSexo.Text = "Sexo";
             // 
             // rdbMasculino
             // 
@@ -142,7 +138,6 @@ namespace LojaABC
             this.rdbMasculino.TabStop = true;
             this.rdbMasculino.Text = "Masculino";
             this.rdbMasculino.UseVisualStyleBackColor = true;
-            this.rdbMasculino.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // rdbNaoDesejoInformar
             // 
@@ -165,7 +160,6 @@ namespace LojaABC
             this.rdbFeminino.TabStop = true;
             this.rdbFeminino.Text = "Feminino";
             this.rdbFeminino.UseVisualStyleBackColor = true;
-            this.rdbFeminino.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // dtpDataDeNascimento
             // 
@@ -174,7 +168,6 @@ namespace LojaABC
             this.dtpDataDeNascimento.Name = "dtpDataDeNascimento";
             this.dtpDataDeNascimento.Size = new System.Drawing.Size(105, 26);
             this.dtpDataDeNascimento.TabIndex = 5;
-            this.dtpDataDeNascimento.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDataDeNascimento
             // 
@@ -184,7 +177,6 @@ namespace LojaABC
             this.lblDataDeNascimento.Size = new System.Drawing.Size(152, 20);
             this.lblDataDeNascimento.TabIndex = 8;
             this.lblDataDeNascimento.Text = "Data de nascimento";
-            this.lblDataDeNascimento.Click += new System.EventHandler(this.label5_Click);
             // 
             // mskCPF
             // 
@@ -193,7 +185,6 @@ namespace LojaABC
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(121, 26);
             this.mskCPF.TabIndex = 4;
-            this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // lblCPF
             // 
@@ -203,7 +194,6 @@ namespace LojaABC
             this.lblCPF.Size = new System.Drawing.Size(40, 20);
             this.lblCPF.TabIndex = 6;
             this.lblCPF.Text = "CPF";
-            this.lblCPF.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtEmail
             // 
@@ -212,7 +202,6 @@ namespace LojaABC
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(216, 26);
             this.txtEmail.TabIndex = 3;
-            this.txtEmail.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // lblEmail
             // 
@@ -222,7 +211,6 @@ namespace LojaABC
             this.lblEmail.Size = new System.Drawing.Size(53, 20);
             this.lblEmail.TabIndex = 4;
             this.lblEmail.Text = "E-mail";
-            this.lblEmail.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtNome
             // 
@@ -231,7 +219,6 @@ namespace LojaABC
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(207, 26);
             this.txtNome.TabIndex = 2;
-            this.txtNome.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // lblNome
             // 
@@ -241,7 +228,6 @@ namespace LojaABC
             this.lblNome.Size = new System.Drawing.Size(51, 20);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome";
-            this.lblNome.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtCodigo
             // 
@@ -251,7 +237,6 @@ namespace LojaABC
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(121, 26);
             this.txtCodigo.TabIndex = 1;
-            this.txtCodigo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lblCodigo
             // 
@@ -261,7 +246,6 @@ namespace LojaABC
             this.lblCodigo.Size = new System.Drawing.Size(59, 20);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Código";
-            this.lblCodigo.Click += new System.EventHandler(this.label1_Click);
             // 
             // pnlCrud
             // 
@@ -272,11 +256,10 @@ namespace LojaABC
             this.pnlCrud.Controls.Add(this.btnExcluir);
             this.pnlCrud.Controls.Add(this.btnCadastrar);
             this.pnlCrud.Controls.Add(this.btnNovo);
-            this.pnlCrud.Location = new System.Drawing.Point(-2, 513);
+            this.pnlCrud.Location = new System.Drawing.Point(2, 504);
             this.pnlCrud.Name = "pnlCrud";
             this.pnlCrud.Size = new System.Drawing.Size(783, 47);
             this.pnlCrud.TabIndex = 19;
-            this.pnlCrud.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnVoltar
             // 
@@ -302,6 +285,7 @@ namespace LojaABC
             this.btnPesquisar.Text = "Pes&quisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPesquisar.UseVisualStyleBackColor = true;
+            this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
             // btnAlterar
             // 
@@ -326,7 +310,7 @@ namespace LojaABC
             this.btnLimpar.Text = "L&impar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
-            this.btnLimpar.Click += new System.EventHandler(this.button4_Click_1);
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnExcluir
             // 
@@ -351,7 +335,7 @@ namespace LojaABC
             this.btnCadastrar.Text = "&Cadastrar";
             this.btnCadastrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.button2_Click);
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // btnNovo
             // 
@@ -364,10 +348,11 @@ namespace LojaABC
             this.btnNovo.Text = "&Novo";
             this.btnNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // grbEndereco
             // 
-            this.grbEndereco.Controls.Add(this.textBox8);
+            this.grbEndereco.Controls.Add(this.txtNumero);
             this.grbEndereco.Controls.Add(this.lblNumero);
             this.grbEndereco.Controls.Add(this.cbbUF);
             this.grbEndereco.Controls.Add(this.lblUF);
@@ -388,15 +373,14 @@ namespace LojaABC
             this.grbEndereco.TabIndex = 11;
             this.grbEndereco.TabStop = false;
             this.grbEndereco.Text = "Endereço";
-            this.grbEndereco.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // textBox8
+            // txtNumero
             // 
-            this.textBox8.Location = new System.Drawing.Point(658, 26);
-            this.textBox8.MaxLength = 10;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(62, 26);
-            this.textBox8.TabIndex = 14;
+            this.txtNumero.Location = new System.Drawing.Point(658, 26);
+            this.txtNumero.MaxLength = 10;
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(62, 26);
+            this.txtNumero.TabIndex = 14;
             // 
             // lblNumero
             // 
@@ -406,7 +390,6 @@ namespace LojaABC
             this.lblNumero.Size = new System.Drawing.Size(65, 20);
             this.lblNumero.TabIndex = 25;
             this.lblNumero.Text = "Número";
-            this.lblNumero.Click += new System.EventHandler(this.label13_Click);
             // 
             // cbbUF
             // 
@@ -452,7 +435,6 @@ namespace LojaABC
             this.lblUF.Size = new System.Drawing.Size(31, 20);
             this.lblUF.TabIndex = 23;
             this.lblUF.Text = "UF";
-            this.lblUF.Click += new System.EventHandler(this.label11_Click);
             // 
             // txtEstado
             // 
@@ -470,7 +452,6 @@ namespace LojaABC
             this.lblCidade.Size = new System.Drawing.Size(59, 20);
             this.lblCidade.TabIndex = 21;
             this.lblCidade.Text = "Cidade";
-            this.lblCidade.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtCidade
             // 
@@ -479,7 +460,6 @@ namespace LojaABC
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(168, 26);
             this.txtCidade.TabIndex = 16;
-            this.txtCidade.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // lblEstado
             // 
@@ -489,7 +469,6 @@ namespace LojaABC
             this.lblEstado.Size = new System.Drawing.Size(60, 20);
             this.lblEstado.TabIndex = 19;
             this.lblEstado.Text = "Estado";
-            this.lblEstado.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtComplemento
             // 
@@ -556,11 +535,11 @@ namespace LojaABC
             this.Name = "frmFuncionarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LojaABC - Funcionáros";
-            this.Load += new System.EventHandler(this.frmFuncionarios_Load);
+            this.Load += new System.EventHandler(this.frmFuncionarios_Load_1);
             this.gpbDadosPessoais.ResumeLayout(false);
             this.gpbDadosPessoais.PerformLayout();
-            this.grbSexo.ResumeLayout(false);
-            this.grbSexo.PerformLayout();
+            this.gpbSexo.ResumeLayout(false);
+            this.gpbSexo.PerformLayout();
             this.pnlCrud.ResumeLayout(false);
             this.grbEndereco.ResumeLayout(false);
             this.grbEndereco.PerformLayout();
@@ -585,7 +564,7 @@ namespace LojaABC
         private System.Windows.Forms.RadioButton rdbNaoDesejoInformar;
         private System.Windows.Forms.RadioButton rdbMasculino;
         private System.Windows.Forms.RadioButton rdbFeminino;
-        private System.Windows.Forms.GroupBox grbSexo;
+        private System.Windows.Forms.GroupBox gpbSexo;
         private System.Windows.Forms.MaskedTextBox mskCelular;
         private System.Windows.Forms.Label lblCelular;
         private System.Windows.Forms.GroupBox grbEndereco;
@@ -602,7 +581,7 @@ namespace LojaABC
         private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.ComboBox cbbUF;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnLimpar;
