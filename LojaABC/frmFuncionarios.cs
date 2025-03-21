@@ -95,7 +95,7 @@ namespace LojaABC
             txtNumero.Clear();
             txtCidade.Clear();
             txtEstado.Clear();
-            cbbUF.Items.Clear(); ;
+            cbbUF.Text = ""; 
             txtComplemento.Clear();
 
             btnCadastrar.Enabled = true;
@@ -135,7 +135,7 @@ namespace LojaABC
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
             frmPesquisarFuncionarios abrir =new frmPesquisarFuncionarios();
-            abrir.Show();   
+            abrir.ShowDialog();   
             this.Hide();
         }
 
@@ -153,6 +153,8 @@ namespace LojaABC
                 MessageBox.Show("Cadastrado com sucesso!!!");
                 limparCampos();
                 desabilitarCampos();
+                btnNovo.Enabled = true;
+                btnNovo.Focus();
             }
 
         }
