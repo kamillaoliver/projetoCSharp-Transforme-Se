@@ -31,11 +31,11 @@ namespace Calculadora
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCalculadora));
             this.lblNum1 = new System.Windows.Forms.Label();
-            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtNumero1 = new System.Windows.Forms.TextBox();
             this.lblNum2 = new System.Windows.Forms.Label();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.txtNumero2 = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.txtResultado = new System.Windows.Forms.TextBox();
+            this.txtResposta = new System.Windows.Forms.TextBox();
             this.gpbOperacoes = new System.Windows.Forms.GroupBox();
             this.rdbDividir = new System.Windows.Forms.RadioButton();
             this.rdbMultiplicar = new System.Windows.Forms.RadioButton();
@@ -50,50 +50,53 @@ namespace Calculadora
             // lblNum1
             // 
             this.lblNum1.AutoSize = true;
+            this.lblNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNum1.Location = new System.Drawing.Point(70, 51);
             this.lblNum1.Name = "lblNum1";
-            this.lblNum1.Size = new System.Drawing.Size(53, 13);
+            this.lblNum1.Size = new System.Drawing.Size(78, 20);
             this.lblNum1.TabIndex = 0;
             this.lblNum1.Text = "Número 1";
             // 
-            // txtNum1
+            // txtNumero1
             // 
-            this.txtNum1.Location = new System.Drawing.Point(70, 76);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(100, 20);
-            this.txtNum1.TabIndex = 1;
+            this.txtNumero1.Location = new System.Drawing.Point(70, 76);
+            this.txtNumero1.Name = "txtNumero1";
+            this.txtNumero1.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero1.TabIndex = 1;
             // 
             // lblNum2
             // 
             this.lblNum2.AutoSize = true;
+            this.lblNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNum2.Location = new System.Drawing.Point(70, 124);
             this.lblNum2.Name = "lblNum2";
-            this.lblNum2.Size = new System.Drawing.Size(53, 13);
+            this.lblNum2.Size = new System.Drawing.Size(78, 20);
             this.lblNum2.TabIndex = 0;
             this.lblNum2.Text = "Número 2";
             // 
-            // txtNum2
+            // txtNumero2
             // 
-            this.txtNum2.Location = new System.Drawing.Point(70, 149);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(100, 20);
-            this.txtNum2.TabIndex = 1;
+            this.txtNumero2.Location = new System.Drawing.Point(70, 149);
+            this.txtNumero2.Name = "txtNumero2";
+            this.txtNumero2.Size = new System.Drawing.Size(100, 20);
+            this.txtNumero2.TabIndex = 2;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(70, 206);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(55, 13);
+            this.lblResultado.Size = new System.Drawing.Size(82, 20);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "Resultado";
             // 
-            // txtResultado
+            // txtResposta
             // 
-            this.txtResultado.Location = new System.Drawing.Point(70, 231);
-            this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(100, 20);
-            this.txtResultado.TabIndex = 1;
+            this.txtResposta.Location = new System.Drawing.Point(70, 231);
+            this.txtResposta.Name = "txtResposta";
+            this.txtResposta.Size = new System.Drawing.Size(100, 20);
+            this.txtResposta.TabIndex = 3;
             // 
             // gpbOperacoes
             // 
@@ -159,10 +162,11 @@ namespace Calculadora
             this.btnCalcular.Location = new System.Drawing.Point(625, 61);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(110, 40);
-            this.btnCalcular.TabIndex = 3;
+            this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "&Calcular";
             this.btnCalcular.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // btnLimpar
             // 
@@ -170,7 +174,7 @@ namespace Calculadora
             this.btnLimpar.Location = new System.Drawing.Point(625, 160);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(110, 40);
-            this.btnLimpar.TabIndex = 3;
+            this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "&Limpar";
             this.btnLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLimpar.UseVisualStyleBackColor = true;
@@ -182,7 +186,7 @@ namespace Calculadora
             this.BtnSair.Location = new System.Drawing.Point(625, 258);
             this.BtnSair.Name = "BtnSair";
             this.BtnSair.Size = new System.Drawing.Size(110, 40);
-            this.BtnSair.TabIndex = 3;
+            this.BtnSair.TabIndex = 6;
             this.BtnSair.Text = "&Sair";
             this.BtnSair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnSair.UseVisualStyleBackColor = true;
@@ -197,14 +201,16 @@ namespace Calculadora
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.gpbOperacoes);
-            this.Controls.Add(this.txtResultado);
+            this.Controls.Add(this.txtResposta);
             this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.txtNum2);
+            this.Controls.Add(this.txtNumero2);
             this.Controls.Add(this.lblNum2);
-            this.Controls.Add(this.txtNum1);
+            this.Controls.Add(this.txtNumero1);
             this.Controls.Add(this.lblNum1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCalculadora";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.frmCalculadora_Load);
             this.gpbOperacoes.ResumeLayout(false);
             this.gpbOperacoes.PerformLayout();
             this.ResumeLayout(false);
@@ -215,11 +221,11 @@ namespace Calculadora
         #endregion
 
         private System.Windows.Forms.Label lblNum1;
-        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.TextBox txtNumero1;
         private System.Windows.Forms.Label lblNum2;
-        private System.Windows.Forms.TextBox txtNum2;
+        private System.Windows.Forms.TextBox txtNumero2;
         private System.Windows.Forms.Label lblResultado;
-        private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.TextBox txtResposta;
         private System.Windows.Forms.GroupBox gpbOperacoes;
         private System.Windows.Forms.RadioButton rdbDividir;
         private System.Windows.Forms.RadioButton rdbMultiplicar;
