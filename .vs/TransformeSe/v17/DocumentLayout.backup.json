@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20927D99-48FF-455D-B3CB-A9348A2A5D01}|Calculadora\\Calculadora.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\calculadora\\frmcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{20927D99-48FF-455D-B3CB-A9348A2A5D01}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\frmcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{15EA9C0C-301B-4FD4-9979-C1D9C3E9DF98}|FolhaPagamento\\FolhaPagamento.csproj|C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\folhapagamento\\frmfluxocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{15EA9C0C-301B-4FD4-9979-C1D9C3E9DF98}|FolhaPagamento\\FolhaPagamento.csproj|solutionrelative:folhapagamento\\frmfluxocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20927D99-48FF-455D-B3CB-A9348A2A5D01}|Calculadora\\Calculadora.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\calculadora\\frmcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20927D99-48FF-455D-B3CB-A9348A2A5D01}|Calculadora\\Calculadora.csproj|solutionrelative:calculadora\\frmcalculadora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{15EA9C0C-301B-4FD4-9979-C1D9C3E9DF98}|FolhaPagamento\\FolhaPagamento.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\folhapagamento\\frmfluxocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15EA9C0C-301B-4FD4-9979-C1D9C3E9DF98}|FolhaPagamento\\FolhaPagamento.csproj|solutionrelative:folhapagamento\\frmfluxocaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmCalculadora.cs",
-              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\Calculadora\\frmCalculadora.cs",
-              "RelativeDocumentMoniker": "Calculadora\\frmCalculadora.cs",
-              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\Calculadora\\frmCalculadora.cs",
-              "RelativeToolTip": "Calculadora\\frmCalculadora.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAqwG4AAAARAAAAAAAAAA==",
+              "Title": "frmFluxoCaixa.cs",
+              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\FolhaPagamento\\frmFluxoCaixa.cs",
+              "RelativeDocumentMoniker": "FolhaPagamento\\frmFluxoCaixa.cs",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\FolhaPagamento\\frmFluxoCaixa.cs*",
+              "RelativeToolTip": "FolhaPagamento\\frmFluxoCaixa.cs*",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAACUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T16:58:04.213Z",
+              "WhenOpened": "2025-03-28T17:56:12.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmCalculadora.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\Calculadora\\frmCalculadora.cs",
-              "RelativeDocumentMoniker": "Calculadora\\frmCalculadora.cs",
-              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\Calculadora\\frmCalculadora.cs [Design]",
-              "RelativeToolTip": "Calculadora\\frmCalculadora.cs [Design]",
+              "Title": "frmFluxoCaixa.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\FolhaPagamento\\frmFluxoCaixa.cs",
+              "RelativeDocumentMoniker": "FolhaPagamento\\frmFluxoCaixa.cs",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\FolhaPagamento\\frmFluxoCaixa.cs [Design]*",
+              "RelativeToolTip": "FolhaPagamento\\frmFluxoCaixa.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T16:33:22.653Z",
+              "WhenOpened": "2025-03-28T17:55:34.921Z",
               "EditorCaption": " [Design]"
             }
           ]
