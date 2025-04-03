@@ -25,7 +25,17 @@ namespace LojaABC
         public frmFuncionarios()
         {
             InitializeComponent();
+            //executando desabilitar os campos
             desabilitarCampos();
+
+
+        }
+        public frmFuncionarios(string descricao)
+        {
+            InitializeComponent();
+            //executando desabilitar os campos
+            desabilitarCampos();
+            txtNome.Text = descricao;
 
 
         }

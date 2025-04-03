@@ -16,6 +16,16 @@ namespace Componentes
         {
             InitializeComponent();
         }
+        public void limparCampos()
+        {
+            txtNome.Clear();
+            ckbLivros.Checked = false;
+            ckbComputador.Checked = false;
+            ckbMesa.Checked = false;
+            ckbBanana.Checked = false;
+            ckbBanana.Focus();
+
+        }
 
         private void txtNome_KeyDown(object sender, KeyEventArgs e)
         {
@@ -40,10 +50,12 @@ namespace Componentes
             if (ckbLivros.Checked)
             {
                 ltbListarProdutos.Items.Add("Livros");
+                pcbImagens.Load(@".\imagens\Livros.png");
             }
             else
             {
                 ltbListarProdutos.Items.RemoveAt(0);
+                pcbImagens.Image = null;
             }
         }
 
@@ -52,10 +64,12 @@ namespace Componentes
             if (ckbComputador.Checked)
             {
                 ltbListarProdutos.Items.Add("Computador");
+                pcbImagens.Load(@".\imagens\Computador.png");
             }
             else
             {
                 ltbListarProdutos.Items.RemoveAt(0);
+                pcbImagens.Image = null;
             }
         }
 
@@ -64,10 +78,12 @@ namespace Componentes
             if (ckbMesa.Checked)
             {
                 ltbListarProdutos.Items.Add("Mesa");
+                pcbImagens.Load(@".\imagens\Mesa.png");
             }
             else
             {
                 ltbListarProdutos.Items.RemoveAt(0);
+                pcbImagens.Image = null;
             }
         }
 
@@ -76,11 +92,53 @@ namespace Componentes
             if(ckbBanana.Checked)
             {
                 ltbListarProdutos.Items.Add("Banana");
+                pcbImagens.Load(@".\imagens\Banana.png");
             }
             else
             {
                 ltbListarProdutos.Items.RemoveAt(0);
+                pcbImagens.Image = null;
             }
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btnCarregarImagem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "selecione a imagem";
+            ofd.Filter = "Imagens|*.jpg;*.jpeg;*.png;*.bmp|Todos os arquivos|*.*";
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            pcbImagens.ImageLocation = ofd.FileName;
+            pcbImagens.Load();
+
+
+
+        }
+
+        private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limparCampos();
+            pcbImagens.Image = null;
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

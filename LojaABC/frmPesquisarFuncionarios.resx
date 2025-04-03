@@ -121,7 +121,7 @@
   <data name="btnPesquisar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        uwAAAbsBOuzj4gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAZlSURBVHhe3Ztd
+        ugAAAboB6KsBBgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAZlSURBVHhe3Ztd
         qFRVGIZHS7SSFDEvIjQwo8LwQjSJkkIMhAixq8wLCSFIBQsvEhELLzIIwcCbEJHwoqsgiMQI6UIkBEtE
         iApUsj+Toj9K+js9r3svzzdr3pmzZ878NS88w8za37f2t9ZZe+31d2pjY2NdBd0Om2AvvAkfwKfwM/wK
         n8FxOAKvwrOwwOXVD2xiu6DFsBNOwb+gxHY5Ay/DUnePXmETq4LWwjmIBekG52EDTHH37SY2cSLQg3AC
@@ -152,10 +152,10 @@
         2HKkVqst/A9Qyg4crli1UwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="btnlimpar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnlLimpar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAABc5JREFUeF7tmltoHGUUx5PU+xW0GhOTbG4kNvpkqCBYIlotvogIhT5pbVCRghWx
+        EgAACxIB0t1+/AAABc5JREFUeF7tmltoHGUUx5PU+xW0GhOTbG4kNvpkqCBYIlotvogIhT5pbVCRghWx
         RUFt0QelRd+sUvShFVotqBW8vRQUr9DWWxXqpWJbhNqXUmJptSbxdybnW87Ozs7O7HwbZmT/8Gdmzu07
         58y33858u20ttNBCCy20kB2lUmlFf3//+u7u7stVlBqDg4NXEuM5Yq1UUTFAwncMDAzMKnepODXw3Wni
         LFVx/sFde98kPs11SVWpgN9eF4fzB1Wcb/T09FxNwv+6xJUbVJ0KhWwAiT5lCnfJH0G1YM4iOYrYgHYS
