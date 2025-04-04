@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+//importando a biblioteca do banco de dados
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1.Mozilla;
+
 
 namespace LojaABC
 {
@@ -36,6 +40,7 @@ namespace LojaABC
             //executando desabilitar os campos
             desabilitarCampos();
             txtNome.Text = descricao;
+            habilitarCampos_pesquisar();
 
 
         }
@@ -62,9 +67,9 @@ namespace LojaABC
             btnExcluir.Enabled = false;
             btnLimpar.Enabled = false;
         }
-
+        //Habilitar os campos
              public void habilitarCampos()
-        {
+             {
             txtNome.Enabled = true;
             txtEmail.Enabled = true;
             mskCPF.Enabled = true;
@@ -85,7 +90,31 @@ namespace LojaABC
             btnExcluir.Enabled = false;
             btnLimpar.Enabled = true;
 
+             }
 
+        //Habilitar os campos pesquisar
+        public void habilitarCampos_pesquisar()
+        {
+            txtNome.Enabled = true;
+            txtEmail.Enabled = true;
+            mskCPF.Enabled = true;
+            dtpDataDeNascimento.Enabled = true;
+            mskCelular.Enabled = true;
+            gpbSexo.Enabled = true;
+
+            txtLogradouro.Enabled = true;
+            mskCEP.Enabled = true;
+            txtNumero.Enabled = true;
+            txtCidade.Enabled = true;
+            txtEstado.Enabled = true;
+            cbbUF.Enabled = true;
+            txtComplemento.Enabled = true;
+
+            btnNovo.Enabled = false;
+            btnCadastrar.Enabled = false;
+            btnAlterar.Enabled = true;
+            btnExcluir.Enabled = true;
+            btnLimpar.Enabled = true;
 
         }
         public void limparCampos()
@@ -148,6 +177,12 @@ namespace LojaABC
             abrir.ShowDialog();   
             this.Hide();
         }
+        public void cadastrarfuncionarios()
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "";
+        }
+
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -168,5 +203,7 @@ namespace LojaABC
             }
 
         }
+
+       
     }
 }

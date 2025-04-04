@@ -38,6 +38,7 @@ namespace LojaABC
             this.ltbPesquisar = new System.Windows.Forms.ListBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.btnlLimpar = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.dpbPesquisarPor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,9 +98,9 @@ namespace LojaABC
             // 
             this.ltbPesquisar.FormattingEnabled = true;
             this.ltbPesquisar.ItemHeight = 20;
-            this.ltbPesquisar.Location = new System.Drawing.Point(24, 161);
+            this.ltbPesquisar.Location = new System.Drawing.Point(24, 164);
             this.ltbPesquisar.Name = "ltbPesquisar";
-            this.ltbPesquisar.Size = new System.Drawing.Size(598, 104);
+            this.ltbPesquisar.Size = new System.Drawing.Size(598, 124);
             this.ltbPesquisar.TabIndex = 4;
             this.ltbPesquisar.SelectedIndexChanged += new System.EventHandler(this.ltbPesquisar_SelectedIndexChanged);
             // 
@@ -107,9 +108,9 @@ namespace LojaABC
             // 
             this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
-            this.btnPesquisar.Location = new System.Drawing.Point(630, 34);
+            this.btnPesquisar.Location = new System.Drawing.Point(628, 33);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(142, 112);
+            this.btnPesquisar.Size = new System.Drawing.Size(142, 103);
             this.btnPesquisar.TabIndex = 5;
             this.btnPesquisar.Text = "&Pesquisar";
             this.btnPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -120,20 +121,35 @@ namespace LojaABC
             // 
             this.btnlLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnlLimpar.Image")));
-            this.btnlLimpar.Location = new System.Drawing.Point(628, 161);
+            this.btnlLimpar.Location = new System.Drawing.Point(628, 143);
             this.btnlLimpar.Name = "btnlLimpar";
-            this.btnlLimpar.Size = new System.Drawing.Size(142, 104);
+            this.btnlLimpar.Size = new System.Drawing.Size(142, 88);
             this.btnlLimpar.TabIndex = 6;
             this.btnlLimpar.Text = "&Limpar";
+            this.btnlLimpar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnlLimpar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnlLimpar.UseVisualStyleBackColor = true;
             this.btnlLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
+            this.btnVoltar.Location = new System.Drawing.Point(628, 237);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(142, 49);
+            this.btnVoltar.TabIndex = 7;
+            this.btnVoltar.Text = "&Voltar";
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // frmPesquisarFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 298);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnlLimpar);
             this.Controls.Add(this.btnPesquisar);
             this.Controls.Add(this.ltbPesquisar);
@@ -163,5 +179,6 @@ namespace LojaABC
         private System.Windows.Forms.ListBox ltbPesquisar;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.Button btnlLimpar;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }
