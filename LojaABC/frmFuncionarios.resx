@@ -169,7 +169,7 @@
   <data name="btnAlterar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJhSURBVFhH7dfL
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJhSURBVFhH7dfL
         6w1hHMfx404uyZ1yW8mfgFJ2VnK3V/ZSrtlgg8Uv143rUsgSKUnuyk5EREJERG6lxPs9Z76n53fkNHPO
         /I4Fn3p1ZqaZZ2aeMzPP96mVyDAsxz7cxgt8xTe8wi0chPu4b2WZAhv+gJ8FfcZ+TEXbGYCt+IK0cdev
         4DB25g7l2z4h3dfe2YJBKJXJuIq0sbNYjMH4U4ZiEc4jPfY6JqBQpuMR4uC7mIeymQOPjXaeYBrMKOzA
@@ -186,7 +186,7 @@
   <data name="btnLimpar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAAbJJREFUWEft10soRFEcx/GJPPJKWIiysvLYeMTaxoLIiqyxZkGSYsXWSsIG2ZGk
+        vAAADrwBlbxySQAAAbJJREFUWEft10soRFEcx/GJPPJKWIiysvLYeMTaxoLIiqyxZkGSYsXWSsIG2ZGk
         sBUrWUhJNlJWSHmE8v7+zh0zd8YdY8ZcWdxffXLOdZ37v+fO5H99caYF23jELdZRjz/JMN5wjkUs4Q7P
         aIerqcMrNpGlA/4U4wgqpFAHfpMU5KPAwRyeUGY79qkD79AOhf9OtGYyIiYNk9Bz1UJuuMYYHAvRxfVs
         59Hrgj4sQ4WoiJBo23XnOsHtbOHSGgaTDd39lJm5m1XcW8PQ7OIBXahGVYLVYAAvWMGXlOMM4R+cRDuE
@@ -199,7 +199,7 @@
   <data name="btnExcluir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA6+AAAOvgHqQrHAAAAC/klE
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAC/klE
         QVRYR8WXua+NQRiHj50E4dKIRGGPBLl/hrUQa0dDiBA6CsGNBB29hkZl3wpLZentBYLQkdiCEDzPud+c
         TOZ+21lu/JIn5zvzzby/OXPmnaXRgUbAeJgBczJ8tsx3wyIDz4RNcBJuwGN4nfEoK/Oddazbs87MgyPw
         BH7D3+zzA7zJ+JiVhXfWtY1tO9YE2ArPwcDf4Bbsg1WwGGZl+GyZ76xjXdvY1hjGakvTweH8Dj/hPCyD

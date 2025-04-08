@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\Conexao.cs",
-              "RelativeDocumentMoniker": "LojaABC\\Conexao.cs",
-              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\Conexao.cs",
-              "RelativeToolTip": "LojaABC\\Conexao.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:46:46.899Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -45,9 +28,9 @@
               "RelativeDocumentMoniker": "LojaABC\\frmFuncionarios.cs",
               "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs",
               "RelativeToolTip": "LojaABC\\frmFuncionarios.cs",
-              "ViewState": "AgIAAJcAAAAAAAAAAAAqwLYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAANsAAAAAAAAAAAAjwO8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T19:12:51.191Z",
+              "WhenOpened": "2025-04-08T17:24:11.982Z",
               "EditorCaption": ""
             },
             {
