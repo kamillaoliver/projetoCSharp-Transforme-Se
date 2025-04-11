@@ -34,6 +34,7 @@ namespace LojaABC
             desabilitarCampos();
 
 
+
         }
         public frmFuncionarios(string descricao)
         {
@@ -42,6 +43,7 @@ namespace LojaABC
             desabilitarCampos();
             txtNome.Text = descricao;
             habilitarCampos_pesquisar();
+            pesquisarPorNome(txtNome.Text);
 
 
         }
@@ -69,8 +71,8 @@ namespace LojaABC
             btnLimpar.Enabled = false;
         }
         //Habilitar os campos
-             public void habilitarCampos()
-             {
+        public void habilitarCampos()
+        {
             txtNome.Enabled = true;
             txtEmail.Enabled = true;
             mskCPF.Enabled = true;
@@ -91,7 +93,7 @@ namespace LojaABC
             btnExcluir.Enabled = false;
             btnLimpar.Enabled = true;
 
-             }
+        }
 
         //Habilitar os campos pesquisar
         public void habilitarCampos_pesquisar()
@@ -123,9 +125,9 @@ namespace LojaABC
             txtNome.Clear();
             txtEmail.Clear();
             mskCPF.Clear();
-            dtpDataDeNascimento.Text ="";
+            dtpDataDeNascimento.Text = "";
             mskCelular.Clear();
-            
+
             rdbFeminino.Checked = false;
             rdbMasculino.Checked = false;
             rdbNaoDesejoInformar.Checked = false;
@@ -135,7 +137,7 @@ namespace LojaABC
             txtNumero.Clear();
             txtCidade.Clear();
             txtBairro.Clear();
-            cbbUF.Text = ""; 
+            cbbUF.Text = "";
             txtComplemento.Clear();
 
             btnCadastrar.Enabled = true;
@@ -171,11 +173,56 @@ namespace LojaABC
         {
             limparCampos();
         }
+        //pesquisar por nome
+        private void pesquisarPorNome(string nome)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "select nome from tbFuncionarios where nome = @nome";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = nome;
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+
+            txtCodigo.Text = DR.GetInt32(0).ToString();
+            txtNome.Text = DR.GetString(1);
+            txtEmail.Text = DR.GetString(2);
+            mskCPF.Text = DR.GetString(3);
+            dtpDataDeNascimento.Value = DR.GetDateTime(4);
+            mskCelular.Text = DR.GetString(5);
+            string sexo = DR.GetString(6);
+            if (sexo == "F")
+            {
+                rdbFeminino.Checked = true;
+            }
+            if (sexo == "M")
+            {
+                rdbMasculino.Checked = true;
+            }
+            if (sexo == "N")
+            {
+                rdbNaoDesejoInformar.Checked = true;
+            }
+            txtLogradouro.Text = DR.GetString(7);
+            mskCEP.Text = DR.GetString(8);
+            txtNumero.Text = DR.GetString(9);
+            txtComplemento.Text = DR.GetString(10);
+            txtBairro.Text = DR.GetString(11);
+            txtCidade.Text = DR.GetString(12);
+            cbbUF.Text = DR.GetString(13);
+
+
+            Conexao.fecharConexao();
+        }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            frmPesquisarFuncionarios abrir =new frmPesquisarFuncionarios();
-            abrir.ShowDialog();   
+            frmPesquisarFuncionarios abrir = new frmPesquisarFuncionarios();
+            abrir.ShowDialog();
             this.Hide();
         }
         public void cadastrarfuncionarios()
@@ -187,8 +234,8 @@ namespace LojaABC
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text.Equals("") || txtEmail.Text.Equals("") || mskCPF.Text.Equals("   .   .   -") || mskCelular.Text.Equals("      -") 
-                || txtLogradouro.Text.Equals("") ||txtNumero.Text.Equals("") || txtCidade.Text.Equals("") || txtBairro.Text.Equals("") ||
+            if (txtNome.Text.Equals("") || txtEmail.Text.Equals("") || mskCPF.Text.Equals("   .   .   -") || mskCelular.Text.Equals("      -")
+                || txtLogradouro.Text.Equals("") || txtNumero.Text.Equals("") || txtCidade.Text.Equals("") || txtBairro.Text.Equals("") ||
                 mskCEP.Text.Equals("     -") || cbbUF.Text.Equals(""))
 
             {
@@ -208,23 +255,22 @@ namespace LojaABC
                 {
                     MessageBox.Show("Erro ao cadastrar");
                 }
-                
+
             }
 
         }
-        public int cadastrarFuncionarios() 
+        public int cadastrarFuncionarios()
         {
             MySqlCommand comm = new MySqlCommand();
             comm.CommandText = "insert into tbFuncionarios(nome,email,cpf,dataNasc,telCel,sexo,logradouro,cep,numero,complemento,bairro,cidade,uf)values(@nome,@email,@cpf,@dataNasc,@telCel,@sexo,@logradouro,@cep,@numero,@complemento,@bairro,@cidade,@uf);";
             comm.CommandType = CommandType.Text;
 
             comm.Parameters.Clear();
-            comm.Parameters.Add("@nome", MySqlDbType.VarChar,100).Value = txtNome.Text;
-            comm.Parameters.Add("@email", MySqlDbType.VarChar,100).Value = txtEmail.Text;
-            comm.Parameters.Add("@cpf", MySqlDbType.VarChar,14).Value = mskCPF.Text;
+            comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = txtNome.Text;
+            comm.Parameters.Add("@email", MySqlDbType.VarChar, 100).Value = txtEmail.Text;
+            comm.Parameters.Add("@cpf", MySqlDbType.VarChar, 14).Value = mskCPF.Text;
             comm.Parameters.Add("@dataNasc", MySqlDbType.DateTime).Value = dtpDataDeNascimento.Value;
-            comm.Parameters.Add("@telCel", MySqlDbType.VarChar,10).Value = mskCelular.Text;
-
+            comm.Parameters.Add("@telCel", MySqlDbType.VarChar, 10).Value = mskCelular.Text;
             if (rdbFeminino.Checked)
             {
                 comm.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "F";
@@ -237,14 +283,14 @@ namespace LojaABC
             {
                 comm.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "N";
             }
-            
-            comm.Parameters.Add("@logradouro",MySqlDbType.VarChar,100).Value = txtLogradouro.Text;
-            comm.Parameters.Add("@cep", MySqlDbType.VarChar,9).Value = mskCEP.Text;
-            comm.Parameters.Add("@numero", MySqlDbType.VarChar,10).Value = txtNumero.Text;
-            comm.Parameters.Add("@complemento",MySqlDbType.VarChar,100).Value = txtComplemento;
-            comm.Parameters.Add("@bairro", MySqlDbType.VarChar,100).Value = txtBairro.Text;
-            comm.Parameters.Add("@cidade",MySqlDbType.VarChar,100).Value = txtCidade.Text;
-            comm.Parameters.Add("@uf", MySqlDbType.VarChar,2).Value = cbbUF.Text;
+
+            comm.Parameters.Add("@logradouro", MySqlDbType.VarChar, 100).Value = txtLogradouro.Text;
+            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 9).Value = mskCEP.Text;
+            comm.Parameters.Add("@numero", MySqlDbType.VarChar, 10).Value = txtNumero.Text;
+            comm.Parameters.Add("@complemento", MySqlDbType.VarChar, 100).Value = txtComplemento;
+            comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 100).Value = txtBairro.Text;
+            comm.Parameters.Add("@cidade", MySqlDbType.VarChar, 100).Value = txtCidade.Text;
+            comm.Parameters.Add("@uf", MySqlDbType.VarChar, 2).Value = cbbUF.Text;
 
             comm.Connection = Conexao.obterConexao();
 
@@ -277,7 +323,7 @@ namespace LojaABC
                 mskCEP.Focus();
                 mskCEP.Clear();
             }
-            
+
         }
 
         private void mskCEP_KeyDown(object sender, KeyEventArgs e)
@@ -293,6 +339,87 @@ namespace LojaABC
         private void mskCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
+        //alterando registros
+        public int alterarFuncionarios(int codFunc)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = " update tbFuncionarios set nome =@nome,email =@email, cpf =@cpf, dataNasc =@dataNasc, telCel =@telCel,sexo =@sexo, logradouro =@logradouro, cep =@cep, numero =@numero, complemento= @complemento bairro =@bairro,cidade =@cidade,uf =@uf where codFunc;";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@nome", MySqlDbType.VarChar, 100).Value = txtNome.Text;
+            comm.Parameters.Add("email", MySqlDbType.VarChar, 100).Value = txtEmail.Text;
+            comm.Parameters.Add("@cpf", MySqlDbType.VarChar, 14).Value = mskCPF.Text;
+            comm.Parameters.Add("@dataNasc", MySqlDbType.Date).Value = dtpDataDeNascimento.Value;
+            comm.Parameters.Add("@telcel", MySqlDbType.VarChar, 10).Value = mskCelular.Text;
+            if (rdbFeminino.Checked)
+            {
+                comm.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "F";
+            }
+            if (rdbMasculino.Checked)
+            {
+                comm.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "M";
+            }
+            if (rdbNaoDesejoInformar.Checked)
+            {
+                comm.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "N";
+            }
+            comm.Parameters.Add("@Logradouro", MySqlDbType.VarChar, 100).Value = txtLogradouro.Text;
+            comm.Parameters.Add("@cep", MySqlDbType.VarChar, 9).Value = mskCEP.Text;
+            comm.Parameters.Add("@numero", MySqlDbType.VarChar, 10).Value = txtNumero.Text;
+            comm.Parameters.Add("@bairro", MySqlDbType.VarChar, 100).Value = txtBairro.Text;
+            comm.Parameters.Add("@cidade", MySqlDbType.VarChar, 100).Value = txtCidade.Text;
+            comm.Parameters.Add("@uf", MySqlDbType.VarChar, 100).Value = cbbUF.Text;
+            comm.Parameters.Add("@codFunc", MySqlDbType.Int32).Value = codFunc;
+
+            comm.Connection = Conexao.obterConexao();
+
+            int resp = comm.ExecuteNonQuery();
+
+            Conexao.fecharConexao();
+
+            return resp;
+
+
+        }
+        //excluir registros dos funcionarios
+        public int excluirFuncionarios(int codFunc)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "delete from tbFuncionarios where codFunc = @codFunc";
+            comm.CommandType = CommandType.Text;
+            comm.Connection = Conexao.obterConexao();
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@codFunc", MySqlDbType.Int32).Value = codFunc;
+
+            int resp = comm.ExecuteNonQuery();
+
+            Conexao.fecharConexao();
+
+            return resp;
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Deseja excluir?", "Mensagem do sistema", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Yes)
+            {
+                excluirFuncionarios(Convert.ToInt32(txtCodigo.Text));
+                limparCampos();
+            }
+            else
+            {
+
+            }
         }
     }
 }

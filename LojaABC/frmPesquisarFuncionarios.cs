@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Web;
+using MySql.Data.MySqlClient;
 
 namespace LojaABC
 {
@@ -51,6 +52,29 @@ namespace LojaABC
             txtDescricao.Enabled = false;
 
         }
+
+        //criando método para pesquisar por código
+        public void pesquisarPorCodigo(int codigo)
+        {
+            MySqlCommand comm = new MySqlCommand();
+            comm.CommandText = "select codFunc from tbFuncionarios where codFunc = (codFunc)";
+            comm.CommandType = CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@codFunc", MySqlDbType.Int32).Value = codigo;
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+            DR.Read();
+
+            ltbPesquisar.Items.Add(DR.GetString(0));
+
+
+            Conexao.fecharConexao();
+        }
+
+
         //Criando o metódo limpar campos
         public void desabilitarCampos()
         {
@@ -85,11 +109,41 @@ namespace LojaABC
             txtDescricao.Enabled = false;
         }
 
+        public void pesquisarPorNome(string descricao)
+        {
+            MySqlCommand comm= new MySqlCommand();
+            comm.CommandText = "select nome from tbFuncionarios where nome like '%a%';";
+            comm.CommandType =CommandType.Text;
+
+            comm.Parameters.Clear();
+            comm.Parameters.Add("@nome",MySqlDbType.VarChar,100).Value = descricao;
+
+            comm.Connection = Conexao.obterConexao();
+
+            MySqlDataReader DR;
+            DR = comm.ExecuteReader();
+
+            while (DR.Read())
+            {
+                ltbPesquisar.Items.Add((DR.GetString(0)));
+            }
+
+            Conexao.fecharConexao();
+
+        }
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            ltbPesquisar.Items.Clear();
-            ltbPesquisar.Items.Add(txtDescricao.Text);
-            LimparCampos_pesquisar();
+          //tbPesquisar.Items.Clear();
+          //tbPesquisar.Items.Add(txtDescricao.Text);
+          //LimparCampos_pesquisar();
+          if (rdbCodigo.Checked)           
+          {
+                pesquisarPorCodigo(Convert.ToInt32(txtDescricao.Text));
+          }
+          if(rdbNome.Checked )
+          {
+                pesquisarPorNome(txtDescricao.Text);
+          }
 
 
         }

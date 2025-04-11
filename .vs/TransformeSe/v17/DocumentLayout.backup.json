@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\frmgerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\frmgerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\frmfuncionarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|c:\\users\\kamilla.msoliveira\\documents\\visual studio 2019\\transformese\\lojaabc\\frmgerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0763533-BA69-4F2A-9AFC-BF7DA3A3C42A}|LojaABC\\LojaABC.csproj|solutionrelative:lojaabc\\frmgerenciarusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +35,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\Program.cs",
+              "RelativeDocumentMoniker": "LojaABC\\Program.cs",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\Program.cs*",
+              "RelativeToolTip": "LojaABC\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:52:13.471Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "frmFuncionarios.cs",
               "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs",
               "RelativeDocumentMoniker": "LojaABC\\frmFuncionarios.cs",
-              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs*",
-              "RelativeToolTip": "LojaABC\\frmFuncionarios.cs*",
-              "ViewState": "AgIAANsAAAAAAAAAAAAjwO8AAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs",
+              "RelativeToolTip": "LojaABC\\frmFuncionarios.cs",
+              "ViewState": "AgIAAHsBAAAAAAAAAAAnwJcBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T17:24:11.982Z",
+              "WhenOpened": "2025-04-11T19:31:13.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "frmFuncionarios.cs [Design]",
               "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs",
               "RelativeDocumentMoniker": "LojaABC\\frmFuncionarios.cs",
-              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs [Design]*",
-              "RelativeToolTip": "LojaABC\\frmFuncionarios.cs [Design]*",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmFuncionarios.cs [Design]",
+              "RelativeToolTip": "LojaABC\\frmFuncionarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T17:51:39.646Z",
+              "WhenOpened": "2025-04-11T19:31:04.85Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmGerenciarUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmGerenciarUsuarios.cs",
+              "RelativeDocumentMoniker": "LojaABC\\frmGerenciarUsuarios.cs",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmGerenciarUsuarios.cs*",
+              "RelativeToolTip": "LojaABC\\frmGerenciarUsuarios.cs*",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAwwJIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:36:47.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmGerenciarUsuarios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmGerenciarUsuarios.cs",
+              "RelativeDocumentMoniker": "LojaABC\\frmGerenciarUsuarios.cs",
+              "ToolTip": "C:\\Users\\kamilla.msoliveira\\Documents\\Visual Studio 2019\\TransformeSe\\LojaABC\\frmGerenciarUsuarios.cs [Design]*",
+              "RelativeToolTip": "LojaABC\\frmGerenciarUsuarios.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T17:10:52.802Z",
               "EditorCaption": " [Design]"
             }
           ]
